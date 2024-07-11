@@ -6,8 +6,8 @@ public class DiscountCalculator {
             return purchaseAmount * 0.1; // 10% discount for regular customers
         } else if (customerType.equals("Premium")) {
             return purchaseAmount * 0.2; // 20% discount for premium customers
-        } else if (customerType.equals("Banned")) {
-            return purchaseAmount;
+        } else if (customerType.equals("Special")) {
+            return purchaseAmount * 0.5;
         }
         return 0;
     }
@@ -17,8 +17,8 @@ public class DiscountCalculator {
             return purchaseAmount * 0.1; // 10% discount for regular customers
         } else if (customer instanceof PremiumCustomer) {
             return purchaseAmount * 0.2; // 20% discount for premium customers
-        } else if (customer instanceof BannedCustomer) {
-            return purchaseAmount;
+        } else if (customer instanceof SpecialCustomer) {
+            return purchaseAmount * 0.5;
         }
         return 0;
     }
