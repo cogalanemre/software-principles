@@ -1,4 +1,4 @@
-package WithoutOCP;
+package WithoutLSP;
 
 class SpecialCustomer implements ICustomer {
     @Override
