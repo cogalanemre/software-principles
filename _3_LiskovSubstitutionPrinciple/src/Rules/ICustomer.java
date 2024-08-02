@@ -1,5 +1,5 @@
 package Rules;
 
 public interface ICustomer {
-    Number calculateDiscount(double purchaseAmount);
+    Number calculateDiscount(Number purchaseAmount) throws RuntimeException;
 }

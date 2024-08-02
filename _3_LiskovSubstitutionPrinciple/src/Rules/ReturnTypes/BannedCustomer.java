@@ -10,7 +10,7 @@ public class BannedCustomer implements ICustomer {
 //    }
 
     @Override
-    public Double calculateDiscount(double purchaseAmount) throws UnsupportedOperationException {
+    public Double calculateDiscount(Number purchaseAmount) throws UnsupportedOperationException {
         throw new UnsupportedOperationException("No discount for banned customers");
     }
 }
