@@ -4,13 +4,21 @@ import Rules.ICustomer;
 
 public class BannedCustomer implements ICustomer {
 
+//    //LSP'ye uygun
+    @Override
+    public Number calculateDiscount(Number purchaseAmount) {
+        return 1;
+    }
+
+//    //LSP'ye uygun
 //    @Override
-//    public Object calculateDiscount(double purchaseAmount) throws UnsupportedOperationException {
-//        throw new UnsupportedOperationException("No discount for banned customers");
+//    public Integer calculateDiscount(Number purchaseAmount) {
+//        return 1;
 //    }
 
-    @Override
-    public Double calculateDiscount(Number purchaseAmount) throws UnsupportedOperationException {
-        throw new UnsupportedOperationException("No discount for banned customers");
-    }
+//    //LSP'ye uygun değil
+//    @Override
+//    public Object calculateDiscount(Number purchaseAmount) {
+//        return 1;
+//    }
 }
