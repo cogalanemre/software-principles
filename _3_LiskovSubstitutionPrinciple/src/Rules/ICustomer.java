@@ -1,5 +1,5 @@
 package Rules;
 
 public interface ICustomer {
-    double calculateDiscount(double purchaseAmount);
+    Number calculateDiscount(double purchaseAmount);
 }
