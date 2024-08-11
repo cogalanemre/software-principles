@@ -1,6 +1,6 @@
-package Rules.Exceptions;
+package Rules._3_Exceptions;
 
-import Rules.ICustomer;
+import Rules._3_Exceptions.ICustomer;
 
 public class BannedCustomer implements ICustomer {
 

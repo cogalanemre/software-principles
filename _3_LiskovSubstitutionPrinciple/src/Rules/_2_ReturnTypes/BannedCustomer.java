@@ -1,6 +1,6 @@
-package Rules.ReturnTypes;
+package Rules._2_ReturnTypes;
 
-import Rules.ICustomer;
+import Rules._2_ReturnTypes.ICustomer;
 
 public class BannedCustomer implements ICustomer {
 

@@ -1,6 +1,6 @@
-package Rules.MethodArgumentTypes;
+package Rules._1_MethodArgumentTypes;
 
-import Rules.ICustomer;
+import Rules._1_MethodArgumentTypes.ICustomer;
 
 public class BannedCustomer implements ICustomer {
 
